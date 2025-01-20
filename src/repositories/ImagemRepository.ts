@@ -1,9 +1,8 @@
-import { AppDataSource } from "../database/connection";
+import { AppDataSource } from "../ormconfig";
 import { Imagem } from "../entities/Imagem";
 
 export const imagemRepository = AppDataSource.getRepository(Imagem);
 
-// Exemplo de uso
 async function findAllImagens() {
   return await imagemRepository.find();
 }

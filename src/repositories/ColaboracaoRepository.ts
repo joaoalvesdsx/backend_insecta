@@ -1,4 +1,4 @@
-import { AppDataSource } from "../database/connection";
+import { AppDataSource } from "../ormconfig";
 import { Colaboracao } from "../entities/Colaboracao";
 
 export const colaboracaoRepository = AppDataSource.getRepository(Colaboracao);
