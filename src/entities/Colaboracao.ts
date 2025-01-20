@@ -12,7 +12,7 @@ import { Imagem } from "./Imagem";
 @Entity()
 export class Colaboracao {
   @PrimaryGeneratedColumn({ type: "int" })
-  colaboracao_id?: number; // Tornando colaboracao_id opcional
+  colaboracao_id?: number;
 
   @ManyToOne(() => User, (user) => user.colaboracoes)
   @JoinColumn({ name: "user_id" }) // Define o nome explícito da coluna no banco de dados
