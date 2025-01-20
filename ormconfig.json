@@ -1,0 +1,10 @@
+{
+  "type": "mysql",
+  "host": "roundhouse.proxy.rlwy.net",
+  "port": 11068,
+  "username": "root",
+  "password": "SAFtYATSAxIAmTZAYZTrfHTTakCoVAiq",
+  "database": "railway",
+  "entities": ["src/entities/**/*.ts"],
+  "synchronize": true
+}
