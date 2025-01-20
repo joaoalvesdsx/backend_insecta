@@ -9,11 +9,13 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "target": "ES2020",
     "strict": true,
     "skipLibCheck": true,
-    "rootDir": "./src"
+    "rootDir": ".",
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/types/**/*.d.ts", "tests/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

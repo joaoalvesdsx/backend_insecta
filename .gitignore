@@ -22,11 +22,9 @@ build/
 # Dependências de ambiente (exemplo com dotenv)
 .env
 
-# Arquivos gerados pelo TypeORM
-ormconfig.json
-
 # Arquivos do sistema operacional (exemplo para macOS)
 .DS_Store
 
 # Arquivos do sistema operacional (exemplo para Windows)
 Thumbs.db
+
