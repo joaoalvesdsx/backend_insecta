@@ -8,6 +8,7 @@ import {
 } from "typeorm";
 import { User } from "./User";
 import { Imagem } from "./Imagem";
+import { Comentario } from "./Comentario";
 
 @Entity()
 export class Colaboracao {
@@ -70,4 +71,7 @@ export class Colaboracao {
 
   @OneToMany(() => Imagem, (imagem) => imagem.colaboracao)
   imagens!: Imagem[];
+
+  @OneToMany(() => Comentario, (comentario) => comentario.colaboracao)
+  comentarios: any;
 }
