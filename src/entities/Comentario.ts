@@ -5,6 +5,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from "typeorm";
+import { IsNotEmpty, IsString, Length } from "class-validator";
 import { Colaboracao } from "./Colaboracao";
 
 @Entity()
@@ -19,8 +20,13 @@ export class Comentario {
   colaboracao!: Colaboracao;
 
   @Column({ type: "varchar", length: 255 })
+  @IsString()
+  @IsNotEmpty()
+  @Length(1, 255)
   assunto!: string;
 
   @Column({ type: "text" })
+  @IsString()
+  @IsNotEmpty()
   comentario!: string;
 }
